@@ -1,111 +1,139 @@
 {
-  "name": "Phoenix-MD",
-  "version": "1.0.0",
-  "description": "Phoenix-MD Simple WhatsApp Bot",
-  "logo": "https://i.imgur.com/T78fhJk.jpeg",
-  "keywords": ["whatsapp", "bot", "md", "multi-device", "Phoenix", "Phoenix-MD", "wabot", "termux-bot", "sc-bot", "plugins", "AbhishekSuresh", "Whatsapp-bot-md"],
-  "repository": "https://github.com/AbhishekSuresh2/Phoenix-MD",
-  "stack": "container",
+  "name": "levanter@5.2.3",
+  "description": "",
+  "keywords": ["noedjs"],
+  "success_url": "/",
   "env": {
-    "SESSION_ID": {
-      "description": "Enter Your Session ID",
-      "required": true
+    "ALWAYS_ONLINE": {
+      "description": "show bot number last seen as online",
+      "required": true,
+      "value": "false"
     },
-    "PREFIX": {
-      "description": "Enter Prefix For Commands Use Emojis Also",
-      "required": false,
-      "value": "."
-    },
-    "SUDO": {
-      "description": "Enter Numbers With Country Code Without + Separated With , To Add More Numbers",
-      "required": false,
-      "value": "919074692450"
-    },
-    "SPAM_COUNT": {
-      "description": "Enter Number Of Times To Send Spam Message Using .spam Command",
-      "required": false,
-      "value": "10"
-    },
-    "STICKER_DATA": {
-      "description": "Enter Your Sticker PackName And Author Name",
-      "required": false,
-      "value": "🎯𝙿𝚑𝚘𝚎𝚗𝚒𝚡-𝙼𝙳;𝙰𝚋𝚑𝚒𝚜𝚑𝚎𝚔 𝚂𝚞𝚛𝚎𝚜𝚑☘️"
-    },
-    "AUDIO_DATA": {
-      "description": "Enter Your Audio Data",
-      "required": false,
-      "value": "Phoenix-MD;Abhishek Suresh;https://graph.org/file/8976892f2f615077b48cd.jpg"
-    },
-    "OWNER_NAME": {
-      "description": "Enter Your Owner Name",
-      "required": false,
-      "value": "Abhishek Suresh"
-    },
-    "OWNER_NUMBER": {
-      "description": "Enter Your Owner Number",
-      "required": false,
-      "value": "919074692450"
-    },
-    "BOT_NAME": {
-      "description": "Enter Your Bot Name",
-      "required": false,
-      "value": "Phoenix-MD"
-    },
-    "MODE": {
-      "description": "Enter Your Mode Type public For Public Otherwise Type private",
-      "required": false,
-      "value": "public"
-    },
-    "MENTION": {
-      "description": "Enter true For Mention Audio Otherwise Type false",
+    "LOG_MSG": {
+      "description": "Show whatsapp msgs in log",
       "required": false,
       "value": "false"
     },
-    "MENTION_DATA": {
-      "description": "Enter Mention Data For Mention Audio",
+    "SUDO": {
+      "description": "admin",
       "required": false,
-      "value": "01:43 ━━━●───── 03:50;⇆ㅤ ||◁ㅤ❚❚ㅤ▷||ㅤ ⇆;919074692450;https://graph.org/file/63942461d4b8d78b360d3.jpg"
+      "value": ""
     },
-    "MENTION_AUDIO": {
-      "description": "Enter Audio Urls For Mention Audio",
-      "required": false,
-      "value": "https://i.imgur.com/NCifJWe.mp4;https://graph.org/file/ecf0772cb95111796848c.mp4"
+    "PREFIX": {
+      "description": "prefix, check for more",
+      "required": true,
+      "value": "."
+    },
+    "SESSION_ID": {
+      "description": "22_7_a8bd_c23a_7035",
+      "required": true,
+      "value": ""
+    },
+    "STICKER_PACKNAME": {
+      "description": "sticker pack info",
+      "required": true,
+      "value": "❤️,Mr.Crazy"
     },
     "HEROKU_APP_NAME": {
-      "description": "Enter Your Heroku App Name Same As Above You Entered",
+      "description": "Heroku app name, same as above entered.",
       "required": true
     },
     "HEROKU_API_KEY": {
-      "description": "Enter Your Heroku Account Api Key. Get It From https://dashboard.heroku.com/account",
+      "description": "Heroku account api key, https://dashboard.heroku.com/account",
       "required": true
     },
-    "AUTO_BIO": {
-  "description": "If You Want To Set Automatic Bio Type true. Otherwise, Type false",
-  "value": "false",
-  "required": false
-   },
-    "AUTO_REACT": {
-  "description": "If You Want To React Automatically To Messages Type true. Otherwise, Type false",
-  "value": "false",
-  "required": false
-   },
-    "AUTO_READ_MSG": {
-  "description": "If You Want To Read Messages Automatically Type true. Otherwise, Type false",
-  "value": "false",
-  "required": false
-   },
-    "AUTO_STATUS_READ": {
-      "description": "If You Want To View Status Automatically, Type true. Otherwise, Type false",
+    "RMBG_KEY": {
+      "description": "API key from remove.bg, required for plugin rmbg",
+      "required": false,
+      "value": "null"
+    },
+    "LANGUAG": {
+      "description": "Default Language for tts or trt",
+      "required": false,
+      "value": "en"
+    },
+    "WARN_LIMIT": {
+      "description": "Maximum number of wanings to a person.",
+      "required": false,
+      "value": "3"
+    },
+    "FORCE_LOGOUT": {
+      "description": "In Some scenario have to logout web, Only such case make this true and back to false after logout.",
+      "required": false,
+      "value": "false"
+    },
+    "DISABLE_BOT": {
+      "description": "Example : jid,jid,... where bot not works in both ways.",
+      "required": false,
+      "value": "null"
+    },
+    "ANTILINK_MSG": {
+      "description": "Message send when antilink and action is kick.",
+      "required": false,
+      "value": "_Antilink Detected &mention kicked_"
+    },
+    "ANTISPAM_MSG": {
+      "description": "Message send when antispam.",
+      "required": false,
+      "value": "_Antispam Detected &mention kicked_"
+    },
+    "ANTIWORDS_MSG": {
+      "description": "Message send when antiword.",
+      "required": false,
+      "value": "_Antiword Detected &mention kicked_"
+    },
+    "ANTIWORDS": {
+      "description": "words that not allowed in chats.",
+      "required": false,
+      "value": "word1,word2,word3"
+    },
+    "SS_TOKEN": {
+      "description": "token from https://app.screenshotapi.net/dashboard",
+      "required": true',
+      "value": ""
+    },
+    "REJECT_CALL": {
+      "description": "auto reject call, if set as true",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_STATUS_VIEW": {
+      "description": "view others status",
+      "required": true,
+      "value": "false"
+    },
+    "SEND_READ": {
+      "description": "send blue tick",
+      "required": false,
+      "value": "false"
+    },
+    "AJOIN": {
+      "description": "Accept Group join request(Group privacy)",
+      "required": true,
+      "value": "true"
+    },
+    "PERSONAL_MESSAGE": {
+      "description": "Send a Welcome message on personal chat",
+      "required": true,
+      "value": "null"
+    },
+    "DISABLE_START_MESSAGE": {
+      "description": "Disable start Message",
       "required": false,
       "value": "false"
     }
   },
-  "buildpacks": [
+  "addons": [
     {
-      "url": "heroku/nodejs"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+      "plan": "heroku-postgresql:basic"
     }
-  ]
+  ],
+
+  "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" }],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
 }
